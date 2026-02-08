@@ -49,51 +49,51 @@ Execute o script com:
 ## 🧪 Exemplo de Saída
 
 ```
-Server Performance Stats
+Estatísticas de desempenho do servidor
 ------------------------
-OS Version:
-Linux localhost.localdomain 4.18.0-553.100.1.el8_10.x86_64 #1 SMP Mon Feb 2 04:13:33 EST 2026 x86_64 x86_64 x86_64 GNU/Linux
+Versão do Sistema Operacional:
+Linux AlmaLinux 4.18.0-553.100.1.el8_10.x86_64 #1 SMP Mon Feb 2 04:13:33 EST 2026 x86_64 x86_64 x86_64 GNU/Linux
 
-Uptime and Load Average:
- 06:01:34 up 5 min,  2 users,  load average: 0,15, 0,58, 0,32
+Tempo de atividade e média de carga:
+ 17:52:41 up 10 min,  1 user,  load average: 0,08, 0,39, 0,36
 
-Logged in Users:
-root     tty1         2026-02-08 05:56
-root     pts/0        2026-02-08 05:58 (192.168.1.20)
+Usuários logados:
+root     pts/0        2026-02-08 17:51 (192.168.1.20)
 
-Recent Failed Login Attempts:
+Falhas recentes de login:
+Feb  8 17:50:38 localhost sshd[2008]: Failed password for root from 192.168.1.20 port 59965 ssh2
+Feb  8 17:50:43 localhost sshd[2008]: Failed password for root from 192.168.1.20 port 59965 ssh2
+Feb  8 17:50:49 localhost sshd[2008]: Failed password for root from 192.168.1.20 port 59965 ssh2
+Feb  8 17:51:00 localhost sshd[2013]: Failed password for root from 192.168.1.20 port 59966 ssh2
 
-Total CPU Usage:
-./server-stats.sh: linha 37: bc: comando não encontrado
-CPU Usage: %
+Uso total de CPU:
+CPU Usage: 99%
 
-Total Memory Usage:
-./server-stats.sh: linha 47: bc: comando não encontrado
+Uso total de memória:
 Total: 3665MB
-Used: 221MB (%)
-Free: 2799MB
+Used: 208MB (5.00%)
+Free: 3002MB
 
-Total Disk Usage:
+Uso total de disco:
 Total: 26087MB
-Used: 3687MB (15%)
-Free: 22400MB
+Used: 3679MB (15%)
+Free: 22409MB
 
-Top 5 Processes by CPU Usage:
+Os 5 processos mais utilizados pela CPU:
 USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-root         829  4.1  0.5 530888 21896 ?        Ssl  05:56   0:12 /usr/bin/python3.6 -s /usr/bin/fail2ban-server -xf start
-root           1  3.8  0.3 175560 13624 ?        Ss   05:55   0:13 /usr/lib/systemd/systemd --switched-root --system --deserialize 18
-root           9  3.8  0.0      0     0 ?        I    05:55   0:13 [kworker/u8:0-events_unbound]
-root          13  3.0  0.0      0     0 ?        S    05:55   0:10 [ksoftirqd/0]
-root         259  1.2  0.0      0     0 ?        I    05:55   0:04 [kworker/0:3-events]
+root         260  7.4  0.0      0     0 ?        I    17:42   0:43 [kworker/0:3-events]
+root          13  5.4  0.0      0     0 ?        S    17:42   0:33 [ksoftirqd/0]
+chrony       794  4.2  0.1 140180  4616 ?        S    17:43   0:22 /usr/sbin/chronyd
+root         824  3.2  0.7 620184 29216 ?        Ssl  17:43   0:16 /usr/libexec/platform-python -Es /usr/sbin/tuned -l -P
+root          22  2.9  0.0      0     0 ?        I    17:42   0:17 [kworker/1:0-events]
 
-Top 5 Processes by Memory Usage:
+Os 5 processos mais utilizados por memória:
 USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-root         795  0.1  1.4 516252 52616 ?        Ssl  05:56   0:00 /usr/libexec/platform-python -s /usr/sbin/firewalld --nofork --nopid
-root         820  1.1  0.8 620184 31104 ?        Ssl  05:56   0:03 /usr/libexec/platform-python -Es /usr/sbin/tuned -l -P
-polkitd     1054  0.0  0.7 1746224 26864 ?       Ssl  05:56   0:00 /usr/lib/polkit-1/polkitd --no-debug
-root         829  4.1  0.5 530888 21896 ?        Ssl  05:56   0:12 /usr/bin/python3.6 -s /usr/bin/fail2ban-server -xf start
-root         807  0.3  0.5 591292 19616 ?        Ssl  05:56   0:01 /usr/sbin/NetworkManager --no-daemon
-Oct 21 03:25:18 myserver sshd[12346]: Failed password for invalid user admin from 192.168.1.100 port 58425 ssh2
+root         790  0.1  1.4 516252 52600 ?        Ssl  17:43   0:00 /usr/libexec/platform-python -s /usr/sbin/firewalld --nofork --nopid
+root         824  3.2  0.7 620184 29216 ?        Ssl  17:43   0:16 /usr/libexec/platform-python -Es /usr/sbin/tuned -l -P
+polkitd     1028  0.0  0.7 1746220 26356 ?       Ssl  17:43   0:00 /usr/lib/polkit-1/polkitd --no-debug
+root         828  2.5  0.5 530888 22104 ?        Ssl  17:43   0:13 /usr/bin/python3.6 -s /usr/bin/fail2ban-server -xf start
+root         808  0.2  0.5 591288 21780 ?        Ssl  17:43   0:01 /usr/sbin/NetworkManager --no-daemon
 ```
 
 
