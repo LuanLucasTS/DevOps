@@ -2,7 +2,7 @@
 
 # Script to analyze basic server performance stats
 
-echo "Server Performance Stats"
+echo "Estatísticas de desempenho do servidor"
 echo "------------------------"
 
 # OS Version
