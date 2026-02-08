@@ -31,7 +31,7 @@ O script fornece as seguintes informações:
 
 1. Baixe o script:
 ```
-wget https://raw.githubusercontent.com/LuanLucasTS/Server-Performance-Stats/main/server-stats.sh
+wget https://github.com/LuanLucasTS/Roadmap/tree/main/Server-Performance-Stats/server-stats.sh
 ```
 
 2. Torne o script executável:
