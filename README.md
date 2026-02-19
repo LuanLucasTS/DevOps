@@ -4,7 +4,7 @@
 | # | Projeto |
 |---|--------|
 | 1 | 📊 [Server Performance Stats](https://roadmap.sh/projects/server-stats) ✅ |
-| 2 | 🗄️ Log Archive Tool |
+| 2 | 🗄️ [Log Archive Tool](https://roadmap.sh/projects/log-archive-tool) ✅ |
 | 3 | 📜 Nginx Log Analyser |
 | 4 | 🚀 GitHub Pages Deployment |
 | 5 | 🔐 SSH Remote Server Setup |
